@@ -38,17 +38,6 @@ Network Logger attaches Chrome's built-in DevTools Protocol (CDP) to your browse
 3. Click **"Add extension"** in the confirmation dialog
 4. The 📡 icon will appear in your Chrome toolbar
 
-### Load unpacked (developer mode)
-
-```bash
-git clone https://github.com/YOUR-USERNAME/network-logger.git
-```
-
-1. Open Chrome and go to `chrome://extensions`
-2. Enable **Developer mode** (toggle, top right)
-3. Click **"Load unpacked"**
-4. Select the `network-logger` folder
-5. The 📡 icon appears in your toolbar
 
 ---
 
@@ -133,28 +122,6 @@ Chrome 116 or later (uses Manifest V3 + `chrome.offscreen` API).
 
 **Is it compatible with other HAR tools?**
 Yes — HAR 1.2 spec-compliant. Works with Chrome DevTools, Firefox DevTools, Charles Proxy, Fiddler, Postman, [Google HAR Analyzer](https://toolbox.googleapps.com/apps/har_analyzer/), and [HAR Viewer](https://www.softwareishard.com/har/viewer/).
-
----
-
-## Project structure
-
-```
-network-logger/
-├── manifest.json      # MV3 extension manifest
-├── background.js      # Service worker — CDP capture + HAR builder
-├── popup.html         # Extension popup UI
-├── popup.css          # Popup styles
-├── popup.js           # Popup logic + messaging
-├── offscreen.html     # Offscreen document (download trigger)
-├── offscreen.js       # Anchor-click download for .har extension
-├── index.html         # GitHub Pages landing page
-├── privacy-policy.html # Privacy policy (hosted on GitHub Pages)
-└── icons/
-    ├── icon16.png
-    ├── icon32.png
-    ├── icon48.png
-    └── icon128.png
-```
 
 ---
 

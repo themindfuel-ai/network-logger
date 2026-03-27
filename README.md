@@ -127,7 +127,7 @@ Yes — HAR 1.2 spec-compliant. Works with Chrome DevTools, Firefox DevTools, Ch
 
 ## Privacy
 
-All captured data is stored in-memory only and is **never transmitted** to any server. See the full [Privacy Policy](https://YOUR-USERNAME.github.io/network-logger/privacy-policy.html).
+All captured data is stored in-memory only and is **never transmitted** to any server. See the full [Privacy Policy](https://themindfuel-ai.github.io/network-logger/privacy-policy.html).
 
 The use of information received from Chrome APIs adheres to the [Chrome Web Store User Data Policy](https://developer.chrome.com/docs/webstore/program-policies/limited-use), including the Limited Use requirements.
 
@@ -135,12 +135,8 @@ The use of information received from Chrome APIs adheres to the [Chrome Web Stor
 
 ## Contributing
 
-1. Fork the repo
-2. Make your changes in the `network-logger/` folder
-3. Load unpacked in Chrome to test (`chrome://extensions` → Developer mode → Load unpacked)
-4. Open a Pull Request with a clear description of the change
 
-Please open an [issue](https://github.com/YOUR-USERNAME/network-logger/issues) before starting large changes.
+Please open an [issue](https://github.com/themindfuel-ai/network-logger/issues) before starting large changes.
 
 ---
 
@@ -152,7 +148,7 @@ Please open an [issue](https://github.com/YOUR-USERNAME/network-logger/issues) b
 
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/YOUR-EXTENSION-ID">Chrome Web Store</a> ·
-  <a href="https://YOUR-USERNAME.github.io/network-logger/">Website</a> ·
-  <a href="https://YOUR-USERNAME.github.io/network-logger/privacy-policy.html">Privacy Policy</a> ·
-  <a href="https://github.com/YOUR-USERNAME/network-logger/issues">Report an Issue</a>
+  <a href="https://themindfuel-ai.github.io/network-logger/">Website</a> ·
+  <a href="https://themindfuel-ai.github.io/network-logger/privacy-policy.html">Privacy Policy</a> ·
+  <a href="https://github.com/themindfuel-ai/network-logger/issues">Report an Issue</a>
 </p>

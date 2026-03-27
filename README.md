@@ -101,8 +101,6 @@ Click **Export as HAR**. A file named `network-log-YYYY-MM-DDTHH-MM-SS.har` is s
 ## ⚠️ Security notice
 
 > HAR files contain **passwords, session tokens, API keys, cookies, and other sensitive data** transmitted over the network. **Do not share HAR files publicly** or with untrusted parties without scrubbing sensitive values first.
->
-> Tools like [Google HAR Sanitizer](https://github.com/google/har-sanitizer) can help remove sensitive fields before sharing.
 
 ---
 

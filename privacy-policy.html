@@ -156,6 +156,12 @@
     outbound network requests of its own.
   </p>
 
+  <p>
+    The extension uses an offscreen document (an internal browser page with no UI) solely to trigger the file download. 
+    It receives the HAR data via Chrome's internal messaging API and writes it to your local disk. 
+    It is not a server, does not have network access, and the data never leaves the browser.
+  </p>
+
   <h2>6. Data Retention</h2>
   <p>
     Captured network data lives only in the browser's in-memory JavaScript

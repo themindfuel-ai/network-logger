@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Network Logger - HAR Exporter</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #24292f;
+      background: #fff;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    h1 { font-size: 2rem; margin-bottom: 6px; }
+    h2 { font-size: 1.2rem; margin: 36px 0 10px; color: #0969da; }
+    p, li { margin-bottom: 10px; }
+    ul { padding-left: 24px; }
+    .meta { color: #57606a; font-size: 0.875rem; margin-bottom: 40px; }
+    .badge {
+      display: inline-block;
+      background: #dafbe1;
+      color: #1a7f37;
+      border: 1px solid #82cfab;
+      border-radius: 20px;
+      padding: 2px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .highlight {
+      background: #fff8c5;
+      border-left: 4px solid #d4a72c;
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      margin: 20px 0;
+    }
+    .warning {
+      background: #fff0f0;
+      border-left: 4px solid #cf222e;
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      margin: 20px 0;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #d0d7de;
+      font-size: 0.85rem;
+      color: #57606a;
+    }
+    a { color: #0969da; }
+  </style>
+</head>
+<body>
+
+  <div class="badge">✔ Chrome Web Store Extension</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">
+    Extension: <strong>Network Logger – HAR Exporter</strong><br/>
+    Last updated: <strong>March 27, 2026</strong><br/>
+    Developer: <strong>YOUR NAME</strong> &nbsp;|&nbsp;
+    Contact: <a href="mailto:YOUR@EMAIL.COM">YOUR@EMAIL.COM</a>
+  </p>
+
+  <h2>1. Overview</h2>
+  <p>
+    Network Logger – HAR Exporter is a Chrome browser extension built for developers
+    and QA engineers. Its sole purpose is to capture the network requests made by
+    your browser and let you export them as a standard
+    <a href="https://w3c.github.io/web-performance/specs/HAR/Overview.html" target="_blank">HAR (HTTP Archive)</a>
+    file to your local disk. The extension does <strong>not</strong> operate a backend
+    server, does <strong>not</strong> communicate with any external service, and does
+    <strong>not</strong> collect, store, or transmit any data beyond your own device.
+  </p>
+
+  <h2>2. Data Collected and How It Is Used</h2>
+  <p>When you click <em>Start Recording</em>, the extension uses the
+  <code>chrome.debugger</code> API (the same mechanism as Chrome DevTools) to observe
+  network traffic in your browser tabs. The following information is captured
+  <strong>temporarily in your browser's memory only</strong>:</p>
+  <ul>
+    <li>Request URLs, HTTP methods, and query parameters</li>
+    <li>Request and response HTTP headers (including <code>Authorization</code>,
+        <code>Cookie</code>, and <code>Set-Cookie</code> headers)</li>
+    <li>Request body content (e.g. POST/PUT payloads)</li>
+    <li>Response body content (text, JSON, HTML, etc.)</li>
+    <li>HTTP status codes and timing information</li>
+  </ul>
+  <p>This data is held <strong>exclusively in your browser's memory</strong> for the
+  duration of your recording session. It is never written to
+  <code>chrome.storage</code>, never sent to any server, and is permanently discarded
+  when you click <em>Clear</em> or close the browser.</p>
+
+  <div class="highlight">
+    <strong>The only way data leaves the browser</strong> is when <em>you</em>
+    explicitly click <strong>"Export as HAR"</strong>, which downloads a <code>.har</code>
+    file to your local Downloads folder. This download is initiated solely by you and
+    goes nowhere else.
+  </div>
+
+  <h2>3. Sensitive Data Warning</h2>
+  <div class="warning">
+    <strong>⚠️ HAR files may contain sensitive information</strong> including
+    passwords, session tokens, API keys, authentication headers, and personal data
+    transmitted over the network. <strong>Do not share exported HAR files
+    publicly</strong> or with untrusted parties without first scrubbing sensitive
+    values. The extension itself displays this warning in its user interface.
+  </div>
+
+  <h2>4. Permissions Justification</h2>
+  <p>The extension requests the following Chrome permissions:</p>
+  <ul>
+    <li>
+      <strong><code>debugger</code></strong> — Required to attach Chrome's built-in
+      DevTools Protocol (CDP) to browser tabs in order to observe network requests and
+      retrieve response bodies. This is the only API in Chrome that exposes response
+      body content. The debugger is attached <em>only</em> while recording is
+      active and is fully detached when you click Stop.
+    </li>
+    <li>
+      <strong><code>tabs</code></strong> — Required to enumerate open browser tabs so
+      the debugger can be attached to each one when recording starts.
+    </li>
+    <li>
+      <strong><code>downloads</code></strong> — Required to save the exported
+      <code>.har</code> file to your local disk.
+    </li>
+    <li>
+      <strong><code>storage</code></strong> — Used only to persist the
+      recording state (on/off) across service worker restarts. No user data is
+      stored here.
+    </li>
+    <li>
+      <strong><code>offscreen</code></strong> — Required by Chrome MV3 to perform
+      an anchor-element download in order to preserve the <code>.har</code> file
+      extension reliably across all platforms.
+    </li>
+    <li>
+      <strong><code>&lt;all_urls&gt;</code> host permission</strong> — Required
+      so the debugger API can attach to tabs on any domain the user chooses to
+      record. The extension does not inject scripts into pages, does not read
+      DOM content, and does not modify any web page.
+    </li>
+  </ul>
+
+  <h2>5. Data Sharing and Third Parties</h2>
+  <p>
+    We do <strong>not</strong> share, sell, rent, or transfer any user data to any
+    third party under any circumstances. The extension contains no analytics
+    libraries, no advertising SDKs, no crash-reporting services, and makes zero
+    outbound network requests of its own.
+  </p>
+
+  <h2>6. Data Retention</h2>
+  <p>
+    Captured network data lives only in the browser's in-memory JavaScript
+    <code>Map</code> object for the lifetime of the service worker session. It is
+    cleared immediately when:
+  </p>
+  <ul>
+    <li>You click <strong>Clear</strong> in the extension popup</li>
+    <li>You start a new recording session (previous data is cleared first)</li>
+    <li>The browser is closed</li>
+    <li>The extension is disabled or removed</li>
+  </ul>
+  <p>
+    The only persistent data stored by the extension is a boolean flag
+    (<code>isRecording: true/false</code>) and a timestamp in
+    <code>chrome.storage.local</code>, used solely to restore UI state after a
+    service worker restart. This contains no user data.
+  </p>
+
+  <h2>7. Children's Privacy</h2>
+  <p>
+    This extension is a developer tool intended for adult users. It is not directed
+    at children under the age of 13 and we do not knowingly collect any information
+    from children.
+  </p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>
+    If we make material changes to this privacy policy, we will update the
+    "Last updated" date at the top of this page and increment the extension version
+    in the Chrome Web Store. Continued use of the extension after changes are posted
+    constitutes acceptance of the revised policy.
+  </p>
+
+  <h2>9. Contact</h2>
+  <p>
+    If you have any questions about this privacy policy or the extension's data
+    practices, please contact us at
+    <a href="mailto:YOUR@EMAIL.COM">themindfuel.ai@gmail.com</a> or open an issue at
+    <a href="https://github.com/themindfuel-ai/network-logger/issues" target="_blank">
+      github.com/themindfuel-ai/network-logger/issues
+    </a>.
+  </p>
+
+  <div class="highlight" style="margin-top: 40px;">
+    <strong>Limited Use Disclosure:</strong> The use of information received from
+    Chrome APIs will adhere to the
+    <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use"
+       target="_blank">Chrome Web Store User Data Policy</a>,
+    including the Limited Use requirements.
+  </div>
+
+  <footer>
+    &copy; 2026 the mind fuel ai &nbsp;|&nbsp;
+    <a href="https://github.com/YOUR-USERNAME/network-logger">GitHub</a> &nbsp;|&nbsp;
+    <a href="https://chromewebstore.google.com">Chrome Web Store</a>
+  </footer>
+
+</body>
+</html>

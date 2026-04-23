@@ -37,6 +37,7 @@ Network Logger attaches Chrome's built-in DevTools Protocol (CDP) to your browse
 2. Click **"Add to Chrome"**
 3. Click **"Add extension"** in the confirmation dialog
 4. The 📡 icon will appear in your Chrome toolbar
+5. [![Available on Chrome Web Store](https://img.shields.io/chrome-web-store/v/godhingolimlfgekelfpmkomgnfgngek?label=Chrome%20Web%20Store)](https://chromewebstore.google.com/detail/godhingolimlfgekelfpmkomgnfgngek)
 
 
 ---

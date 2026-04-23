@@ -2,7 +2,7 @@
 
 > Capture browser network requests across all tabs and export them as a HAR file — **without opening DevTools**.
 
-[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install-blue?logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/YOUR-EXTENSION-ID)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install-blue?logo=google-chrome&logoColor=white)](https://chromewebstore.google.com/detail/godhingolimlfgekelfpmkomgnfgngek)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-green)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -37,7 +37,7 @@ Network Logger attaches Chrome's built-in DevTools Protocol (CDP) to your browse
 2. Click **"Add to Chrome"**
 3. Click **"Add extension"** in the confirmation dialog
 4. The 📡 icon will appear in your Chrome toolbar
-5. [![Available on Chrome Web Store](https://img.shields.io/chrome-web-store/v/godhingolimlfgekelfpmkomgnfgngek?label=Chrome%20Web%20Store)](https://chromewebstore.google.com/detail/godhingolimlfgekelfpmkomgnfgngek)
+
 
 
 ---

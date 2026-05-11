@@ -27,6 +27,12 @@ Network Logger attaches Chrome's built-in DevTools Protocol (CDP) to your browse
 - 🌐 **All tabs** — Captures traffic across every open tab simultaneously
 - 💾 **Memory-safe** — Capped at 50,000 entries; cleared on Stop or Close
 
+### 🆕 v1.1.0 - Upcoming Features
+
+- 📝 **Custom HAR filename** — name your export based on the flow you're testing (e.g. `login-flow.har`, `checkout-bug.har`). Leave blank for auto-generated timestamp name.
+- 🛡️ **Sensitive data scrubbing** — toggle ON to automatically redact Authorization headers, Cookies, JWT tokens, API keys, passwords, and secrets before export. Safe to share HAR files with your team.
+- 🔢 **Live badge counter** — see the request count directly on the toolbar icon without opening the popup(Note-pin the extension to see in toolbar). Red while recording, green when stopped with data.
+
 ---
 
 ## Installation
@@ -91,7 +97,6 @@ Click **Export as HAR**. A file named `network-log-YYYY-MM-DDTHH-MM-SS.har` is s
 | Permission | Why it's needed |
 |---|---|
 | `debugger` | Attaches CDP to observe network traffic and retrieve response bodies. Active only while recording. |
-| `tabs` | Enumerates open tabs so the debugger can attach to each one. |
 | `downloads` | Saves the `.har` file to your local disk. |
 | `storage` | Persists only the on/off state across service worker restarts. No user data stored. |
 | `offscreen` | Chrome MV3 requirement to perform anchor-element download preserving `.har` extension. |

@@ -139,12 +139,6 @@ Please open an [issue](https://github.com/themindfuel-ai/network-logger/issues) 
 
 ---
 
-## License
-
-[MIT](LICENSE) — free to use, modify, and distribute.
-
----
-
 <p align="center">
   <a href="https://chromewebstore.google.com/detail/YOUR-EXTENSION-ID">Chrome Web Store</a> ·
   <a href="https://themindfuel-ai.github.io/network-logger/">Website</a> ·

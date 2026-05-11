@@ -140,7 +140,7 @@ Please open an [issue](https://github.com/themindfuel-ai/network-logger/issues) 
 ---
 
 <p align="center">
-  <a href="https://chromewebstore.google.com/detail/YOUR-EXTENSION-ID">Chrome Web Store</a> ·
+  <a href="https://chromewebstore.google.com/detail/godhingolimlfgekelfpmkomgnfgngek">Chrome Web Store</a> ·
   <a href="https://themindfuel-ai.github.io/network-logger/">Website</a> ·
   <a href="https://themindfuel-ai.github.io/network-logger/privacy-policy.html">Privacy Policy</a> ·
   <a href="https://github.com/themindfuel-ai/network-logger/issues">Report an Issue</a>

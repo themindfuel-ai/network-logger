@@ -29,35 +29,35 @@ Capture network requests across all tabs and export as a HAR file — no DevTool
 ### 🆕 v1.1.0 
 
 - 📝 **Custom HAR filename** — name your export based on the flow you're testing (e.g. `login-flow.har`, `checkout-bug.har`). Leave blank for auto-generated timestamp name.
-  - Examples
-      | Input | Output |
-      |-------|--------|
-      | _(empty)_ | `network-log-2026-05-11T14-30-00.har` |
-      | `login-flow` | `login-flow.har` |
-      | `checkout bug` | `checkout bug.har` |
-      | `test<>file` | `test__file.har` (invalid chars sanitized) |
+
+  | Input | Output |
+  |-------|--------|
+  | _(empty)_ | `network-log-2026-05-11T14-30-00.har` |
+  | `login-flow` | `login-flow.har` |
+  | `checkout bug` | `checkout bug.har` |
+  | `test<>file` | `test__file.har` (invalid chars sanitized) |
 
 - 🛡️ **Sensitive data scrubbing** — toggle ON to automatically redact Authorization headers, Cookies, JWT tokens, API keys, passwords, and secrets before export. Safe to share HAR files with your team.
-  - Examples
-    | What's Scrubbed | Example |
-    |-----------------|---------|
-    | **Auth headers** | `Authorization: Bearer eyJ...` → `Authorization: [REDACTED]` |
-    | **Cookies** | `Cookie: session=abc123` → `Cookie: [REDACTED]` |
-    | **Set-Cookie** | `Set-Cookie: token=xyz` → `Set-Cookie: [REDACTED]` |
-    | **Cookie arrays** | `{ name: "session", value: "abc" }` → `{ name: "session", value: "[REDACTED]" }` |
-    | **JWT tokens** | `eyJhbGciOi...` → `[REDACTED]` |
-    | **JSON secrets** | `"password": "abc123"` → `"password": "[REDACTED]"` |
-    | **URL params** | `?api_key=xyz` → `?api_key=[REDACTED]` |
-    | **URL-encoded** | `password=abc123` → `password=[REDACTED]` |
+
+  | What's Scrubbed | Example |
+  |-----------------|---------|
+  | **Auth headers** | `Authorization: Bearer eyJ...` → `Authorization: [REDACTED]` |
+  | **Cookies** | `Cookie: session=abc123` → `Cookie: [REDACTED]` |
+  | **Set-Cookie** | `Set-Cookie: token=xyz` → `Set-Cookie: [REDACTED]` |
+  | **Cookie arrays** | `{ name: "session", value: "abc" }` → `{ name: "session", value: "[REDACTED]" }` |
+  | **JWT tokens** | `eyJhbGciOi...` → `[REDACTED]` |
+  | **JSON secrets** | `"password": "abc123"` → `"password": "[REDACTED]"` |
+  | **URL params** | `?api_key=xyz` → `?api_key=[REDACTED]` |
+  | **URL-encoded** | `password=abc123` → `password=[REDACTED]` |
 - 🔢 **Live badge counter** — see the request count directly on the toolbar icon without opening the popup( Note-pin the extension to see in toolbar ). Red while recording, green when stopped with data.
-  - Examples
-    | State | Badge | Color |
-    |-------|-------|-------|
-    | Idle, no data | _(empty)_ | — |
-    | Recording | `47` | 🔴 Red |
-    | Stopped with data | `47` | 🟢 Green |
-    | Cleared | _(empty)_ | — | 
-  
+
+  | State | Badge | Color |
+  |-------|-------|-------|
+  | Idle, no data | _(empty)_ | — |
+  | Recording | `47` | 🔴 Red |
+  | Stopped with data | `47` | 🟢 Green |
+  | Cleared | _(empty)_ | — | 
+
 
 ---
 

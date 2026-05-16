@@ -26,7 +26,7 @@ Capture network requests across all tabs and export as a HAR file — no DevTool
 - 🌐 **All tabs** — Captures traffic across every open tab simultaneously
 - 💾 **Memory-safe** — Capped at 50,000 entries; cleared on Stop or Close
 
-### 🆕 v1.1.0 
+### v1.1.0 
 
 - 📝 **Custom HAR filename** — name your export based on the flow you're testing (e.g. `login-flow.har`, `checkout-bug.har`). Leave blank for auto-generated timestamp name.
 
@@ -58,7 +58,8 @@ Capture network requests across all tabs and export as a HAR file — no DevTool
   | Stopped with data | `47` | 🟢 Green |
   | Cleared | _(empty)_ | — | 
 
-
+### 🆕 v1.2.0 
+- 🔥 **UI/UX Enhancement** — Self guide navigation , Toggle dark/light theme 
 ---
 
 ## Installation

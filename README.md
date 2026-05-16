@@ -9,7 +9,9 @@
 
 ## What it does
 
-Capture network requests across all tabs and export as a HAR file — no DevTools needed. Perfect for debugging and sharing logs.
+Capture HAR files instantly without opening Chrome DevTools. HAR Capture helps developers, QA engineers, and support teams to export HAR logs in one click.
+
+No more repeatedly opening DevTools, switching to the Network tab, and reloading pages manually. Simplify your debugging workflow and capture network activity faster.
 
 **Key difference from DevTools:** DevTools must be open and on the correct tab *before* the request fires. Network Logger captures traffic from all tabs the moment you click Start, even if DevTools has never been opened.
 
